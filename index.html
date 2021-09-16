@@ -7,19 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<!--Below is the beginning of the body-->
 <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform.</p>
-    <!--------------------Below is the beginning of the form-------------------->
+<!--------------------Below is the beginning of the form-------------------->
     <form id="survey-form">
         <div>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+            <label for="name-label">Name:</label><br>
+            <input type="text" id="name-label" name="name-label" placeholder="Enter your name" required>
         </div>
         <div>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" placeholder="Enter your email" required>
+            <label for="email-label">Email:</label><br>
+            <input type="email" id="email-label" name="email-label" placeholder="Enter your email" required>
         </div>
+        <div>
+            <label for="number-label">Age(Optional):</label><br>
+            <input type="number" id="number-label" name="number-label" placeholder="Age" min="10" max="99" required>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
       </form>
 </body>
 </html>
